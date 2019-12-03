@@ -1,5 +1,5 @@
 var a = 3;
-var b = 4;
+let b = 4;
 
 var a = 30;
 b = 40
