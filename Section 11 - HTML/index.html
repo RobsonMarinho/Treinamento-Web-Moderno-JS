@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Exercícios HTML</title>
-<style>
-#conteudo{
-    padding: 30px 0px;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios HTML</title>
+    <style>
+        #conteudo {
+            padding: 30px 0px;
 
-}
-</style>
+        }
+    </style>
 </head>
+
 <body>
-<header>
-Exerccios HTML
+    <header>
+        Exerccios HTML
 
-</header>
-<nav>
-<br>
-<a href="exercicios/teste.html">00 - Teste </a>
-<a href="exercicios/texto01.html"> 01 - Texto 01</a>
-</nav>
-<section id="conteudo"></section>
-<footer>
-Curso de Web Moderno
-</footer>
-<script>
-document.querySelectAll('a'). forrEach(link => {
-const conteudo = document.getElementById('conteudo')
+    </header>
+    <nav>
+        <br>
+        <a href="exercicios/teste.html">00 - Teste </a>
+        <a href="exercicios/texto01.html"> 01 - Texto 01</a>
+        <a href="exercicios/texto02.html"> 02 - Texto 02</a>
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        Curso de Web Moderno
+    </footer>
+    <script>
+        document.querySelectAll('a').forrEach(link => {
+            const conteudo = document.getElementById('conteudo')
 
-link.onclick = function(e) {
-    e.preventDefault()
-    fetch(link.getAttribute('wm-nav'))
-        .then(resp => resp.text())
-        .then(html => conteudo.innerHTML = html)
-    }
-})
-</script>
+            link.onclick = function (e) {
+                e.preventDefault()
+                fetch(link.getAttribute('wm-nav'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
 </body>
+
 </html>
