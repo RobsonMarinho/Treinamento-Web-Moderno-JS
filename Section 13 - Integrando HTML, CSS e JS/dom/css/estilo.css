@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 10px;
     background-color: #0D262D;
     color: #fff;
     height: 100%;
@@ -28,7 +28,7 @@ body {
 .exercicio div {
     font-size: 3em;
     border: solid 5px #fff;
-    padding: 20px 40px;
+    padding: 31px 19px;
     margin: 10px;
 }
 
